@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cardgame.cardGameController">
+    <Label fx:id="turn" textFill="blue">
+        <font>
+            <Font size="30" />
+        </font>
+    </Label>
+    <HBox alignment="TOP_LEFT">
+        <VBox alignment="TOP_CENTER">
+            <Label fx:id="player1" textFill="darkblue">
+                <font>
+                    <Font size="20" />
+                </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../../../img/フレーム.png" />
+                </image>
+            </ImageView>
+            <Label fx:id="countPlayer1">
+                <font>
+                    <Font size="30" />
+                </font>
+            </Label>
+        </VBox>
+        
+        <Label fx:id="result" alignment="CENTER" prefHeight="223.0" prefWidth="997.0" textFill="gold">
+            <font>
+                <Font size="50" />
+            </font>
+        </Label>
+
+        <Region HBox.hgrow="ALWAYS" />
+        <VBox alignment="TOP_CENTER">
+            <Label fx:id="player2" textFill="darkred">
+                <font>
+                    <Font size="20" />
+                </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../../../img/フレーム.png" />
+                </image>
+            </ImageView>
+            <Label fx:id="countPlayer2">
+                <font>
+                    <Font size="30" />
+                </font>
+            </Label>
+        </VBox>
+    </HBox>
+
+    <VBox>
+        <HBox>
+            <ImageView fx:id="card1" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard1">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card2" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard2">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card3" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard3">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card4" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard4">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card5" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard5">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card6" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard6">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card7" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard7">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card8" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard8">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card9" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard9">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card10" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard10">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card11" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard11">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card12" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard12">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card13" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard13">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+        </HBox>
+        <HBox>
+            <ImageView fx:id="card14" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard14">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card15" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard15">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card16" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard16">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card17" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard17">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card18" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard18">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card19" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard19">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card20" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard20">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card21" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard21">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card22" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard22">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card23" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard23">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card24" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard24">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card25" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard25">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card26" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard26">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+        </HBox>
+        <HBox>
+            <ImageView fx:id="card27" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard27">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card28" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard28">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card29" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard29">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card30" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard30">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card31" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard31">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card32" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard32">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card33" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard33">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card34" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard34">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card35" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard35">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card36" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard36">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card37" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard37">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card38" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard38">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card39" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard39">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+        </HBox>
+        <HBox>
+            <ImageView fx:id="card40" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard40">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card41" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard41">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card42" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard42">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card43" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard43">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card44" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard44">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card45" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard45">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card46" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard46">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card47" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard47">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card48" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard48">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card49" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard49">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card50" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard50">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card51" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard51">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="card52" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickCard52">
+                <image>
+                    <Image url="@../../../img/card_back.png" />
+                </image>
+            </ImageView>
+        </HBox>
+    </VBox>
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+</VBox>
