@@ -19,16 +19,18 @@
                     <Font size="20" />
                 </font>
             </Label>
-            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                <image>
-                    <Image url="@../../../img/フレーム.png" />
-                </image>
-            </ImageView>
-            <Label fx:id="countPlayer1">
-                <font>
-                    <Font size="30" />
-                </font>
-            </Label>
+            <StackPane>
+                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../img/フレーム.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="countPlayer1" textFill="darkblue">
+                    <font>
+                        <Font size="30" />
+                    </font>
+                </Label>
+            </StackPane>
         </VBox>
         
         <Label fx:id="result" alignment="CENTER" prefHeight="223.0" prefWidth="997.0" textFill="gold">
@@ -44,16 +46,18 @@
                     <Font size="20" />
                 </font>
             </Label>
-            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                <image>
-                    <Image url="@../../../img/フレーム.png" />
-                </image>
-            </ImageView>
-            <Label fx:id="countPlayer2">
-                <font>
-                    <Font size="30" />
-                </font>
-            </Label>
+            <StackPane>
+                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../img/フレーム.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="countPlayer2" textFill="darkred">
+                    <font>
+                        <Font size="30" />
+                    </font>
+                </Label>
+            </StackPane>
         </VBox>
     </HBox>
 

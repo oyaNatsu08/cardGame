@@ -73,7 +73,6 @@ public class cardGameController {
         );
         timeline.play();
 
-
         //プレイヤーの初回取得枚数を表示
         countPlayer1.setText("0");
         countPlayer2.setText("0");
