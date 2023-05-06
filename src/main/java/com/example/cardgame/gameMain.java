@@ -22,7 +22,7 @@ public class gameMain extends Application {
         //画面サイズと呼び出すfxmlファイルを決める
         Scene scene = new Scene(scrollPane);
         //タイトルを決める
-        stage.setTitle("GameStart!");
+        stage.setTitle("神経衰弱ゲーム");
         stage.setScene(scene);
         stage.setWidth(Screen.getPrimary().getVisualBounds().getWidth());
         stage.setHeight(Screen.getPrimary().getVisualBounds().getHeight());

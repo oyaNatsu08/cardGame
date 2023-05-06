@@ -1,4 +1,4 @@
-module com.example.cardgame2 {
+module com.example.cardgame {
     requires javafx.controls;
     requires javafx.fxml;
 
