@@ -34,5 +34,4 @@ public class gameMain extends Application {
         //Applicationクラスのメソッド、自動でstartメソッドなどを呼び出す
         launch();
     }
-
 }
