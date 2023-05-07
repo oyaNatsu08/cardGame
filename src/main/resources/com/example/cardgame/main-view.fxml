@@ -9,7 +9,7 @@
 <VBox alignment="TOP_CENTER" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cardgame.cardGameController">
     <Label fx:id="turn" textFill="blue">
         <font>
-            <Font size="30" />
+            <Font size="50" />
         </font>
     </Label>
     <HBox alignment="TOP_LEFT">
@@ -35,7 +35,7 @@
         
         <Label fx:id="result" alignment="CENTER" prefHeight="223.0" prefWidth="997.0" textFill="gold">
             <font>
-                <Font size="50" />
+                <Font size="70" />
             </font>
         </Label>
 

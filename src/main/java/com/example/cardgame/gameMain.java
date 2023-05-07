@@ -15,7 +15,7 @@ public class gameMain extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         //fxmlファイルを準備
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("main-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(gameMain.class.getResource("main-view.fxml"));
         Parent root = fxmlLoader.load();
         ScrollPane scrollPane = new ScrollPane(root);
 
