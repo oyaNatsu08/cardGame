@@ -412,6 +412,14 @@ public class cardGameController {
         if (drawCount >= 2) {
             drawCount = 0;
 
+            //同じトランプをクリックしてないか確かめる
+            if (drawImage.get(0).toString().equals(drawImage.get(1).toString())) {
+                //処理を二枚引いたから一枚引いたことに戻す
+                drawCount = 1;
+                drawImage.remove(1);
+                return;
+            }
+
             //トランプの数字のみ取得
             String num1 = drawImage.get(0).getImage().getUrl().replaceAll("\\D+", ""); // 文字以外を全て削除
             String num2 = drawImage.get(1).getImage().getUrl().replaceAll("\\D+", "");
